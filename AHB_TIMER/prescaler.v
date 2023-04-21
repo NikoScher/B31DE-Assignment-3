@@ -1,5 +1,5 @@
 
-// Assignment 3 Adv Digital Timer 28-bit Prescaler Module
+// Assignment 2 Adv Digital Timer 28-bit Prescaler Module
 // Nikolaus Scherwitzel (H00298068)
 
 module prescaler (

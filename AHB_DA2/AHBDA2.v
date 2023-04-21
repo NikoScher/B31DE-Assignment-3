@@ -1,5 +1,5 @@
 
-// Assignment 3 Adv Digital DA2 Module
+// Assignment 3 Adv Digital 12-bit DA2 Module
 // Nikolaus Scherwitzel (H00298068)
 
 module AHBDA2 (
@@ -61,10 +61,10 @@ module AHBDA2 (
     end
     // If we're currently writing a sample:
     if (!rDA2_CS) begin
-      if (rS_COUNTER <= 5'b00011)   // First 4 bits define operation mode (must be 0's)
+      if (rS_COUNTER <= 5'b00011)   // First 4 bits define ‘not-cares’ and operation mode
         rDA2_DINA <= 1'b0;
       else                          // Otherwise we're writing data sample bits
-        rDA2_DINA <= rSAMPLE[16'd15 - rS_COUNTER];
+        rDA2_DINA <= rSAMPLE[12'd11 - rS_COUNTER];
       rS_COUNTER <= rS_COUNTER + 1'b1;
     end
     

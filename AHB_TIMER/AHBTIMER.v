@@ -1,5 +1,6 @@
 
-// Insert header comments
+// Assignment 2 Adv Digital 32-bit Timer Module
+// Nikolaus Scherwitzel (H00298068)
 
 module AHBTIMER (
   input wire HCLK,

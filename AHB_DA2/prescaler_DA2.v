@@ -1,8 +1,8 @@
 
-// Assignment 3 Adv Digital DA2 Prescaler Module
+// Assignment 3 Adv Digital 1-bit DA2 Prescaler Module
 // Nikolaus Scherwitzel (H00298068)
 
-// Divides HCLK by 2 (50Mhz/2) = 25MHz
+// Divides HCLK by 2 (50MHz/2) = 25MHz
 
 module prescaler_DA2 (
   input wire inCLK,
