@@ -64,7 +64,7 @@ module AHBDA2 (
       if (rS_COUNTER <= 5'b00011)   // First 4 bits define ‘not-cares’ and operation mode
         rDA2_DINA <= 1'b0;
       else                          // Otherwise we're writing data sample bits
-        rDA2_DINA <= rSAMPLE[12'd11 - rS_COUNTER];
+        rDA2_DINA <= rSAMPLE[16'd15 - rS_COUNTER];
       rS_COUNTER <= rS_COUNTER + 1'b1;
     end
     
